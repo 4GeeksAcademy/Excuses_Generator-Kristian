@@ -17,7 +17,8 @@ const when = ['before the class', 'when I was sleeping', 'while I was exercising
 
 const getRandomExcuse = arr => arr[Math.floor(Math.random() * arr.length)];
 
-let statement = who[quien] + " " + action[accion] + " " + what[que] + " " + when[cuando];
+let statement = `${getRandomExcuse(who)} ${getRandomExcuse(action)} ${getRandomExcuse(what)} ${getRandomExcuse(when)}.`;
+
 let new_statement = document.getElementById("excuse");
 new_statement.innerHTML = statement
 };
